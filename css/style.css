@@ -1,0 +1,19 @@
+@import url('vendor/bootstrap.css');
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+body.form {
+  background-color: #e8eef7;
+}
+
+body.form iframe {
+  width: 100%;
+  margin: 0 auto;
+}
