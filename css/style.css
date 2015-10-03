@@ -1,19 +1,58 @@
 @import url('vendor/bootstrap.css');
 
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0.6em;
+  padding-bottom: 2em;
 }
 
-.navbar {
-  margin-bottom: 20px;
+nav {
+  margin: 0.4em 0 2em;
 }
 
-body.form {
-  background-color: #e8eef7;
+nav li {
+  list-style: none;
 }
 
-body.form iframe {
+nav li a:before {
+  content: '↳';
+  margin-right: 0.4em;
+}
+
+nav li a[href="/"]:before {
+  /*content: '↵';*/
+  content: '■';
+}
+
+nav li a.active {
+  font-weight: bold;
+  cursor: default;
+  text-decoration: none;
+}
+
+body.form iframe,
+body.calendar iframe {
   width: 100%;
   margin: 0 auto;
+}
+
+body.calendar iframe {
+  max-width: 50em;
+}
+
+body.home header h1 {
+  margin-bottom: 0;
+}
+
+body.home header h2 {
+  margin: 0.2em 0 1.6em;
+  font-style: italic;
+  font-size: 1.4em;
+  color: #555;
+}
+
+@media only screen and (max-width: 560px) {
+  body.calendar .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
