@@ -5,6 +5,25 @@ body {
   padding-bottom: 2em;
 }
 
+.gallery {
+  padding-bottom: 20px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction:         row;
+  -webkit-justify-content: flex-start; /* Safari */
+  justify-content:         flex-start;
+  -webkit-align-items: center; /* Safari */
+  align-items:         center;
+   -webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap:         wrap;
+}
+
+.gallery img {
+  width: 110px;
+  margin: 5px;
+}
+
 nav {
   margin: 0.4em 0 2em;
 }
@@ -35,7 +54,6 @@ body.calendar iframe {
 }
 
 body.lead-event iframe {
-  max-width: 700px; /* theme restriction */
   margin-top: 1em;
 }
 
