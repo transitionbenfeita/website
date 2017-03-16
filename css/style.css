@@ -1,8 +1,16 @@
-@import url('vendor/bootstrap.css');
+@import url('vendor/bootstrap.min.css');
 
 body {
   padding-top: 0.6em;
-  padding-bottom: 2em;
+  padding-bottom: 0;
+}
+
+a {
+  color: #578e31;
+}
+
+hr {
+  /*border-color: #578e31;*/
 }
 
 .gallery {
@@ -51,11 +59,6 @@ body {
   .gallery img {
     width: 60px;
   }
-}
-
-.well,
-.panel-default > .panel-heading {
-  background-color: #e2f3eb;
 }
 
 nav {
@@ -107,11 +110,48 @@ body.home header h2 {
 }
 
 body.home footer {
-  margin-top: 2.6em;
+  margin: 0 0 3.8em;
+}
+
+body > .container > section {
+  margin-bottom: 3.8em;
+}
+
+.well {
+  border: 3px solid #578e31;
+  background-color: transparent;
+  border-radius: 0.62em;
+}
+
+.panel-default .panel-heading {
+  background-color: #8dae5d;
+  font-size: 3em;
+}
+
+.panel-default .panel-title {
+  font-size: 1.84rem;
+}
+
+.callout {
+  min-width: 20em;
+  max-width: 62%;
+}
+
+.callout img.feature {
+  border: 0;
+  border-radius: 0.38em;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 1em 0;
 }
 
 body.home .treelogo {
-  margin-top: 1.6em;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.spread {
+  width: 100%;
 }
 
 .panel > .list-group:last-child {
